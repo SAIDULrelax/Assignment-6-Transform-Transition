@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background: linear-gradient(180deg, #f7f7f9, #eef2f6);
+}
+.box{
+    width: 150px;
+    height: 80px;
+    background-color: red;
+    border-radius: 0;
+    position: relative;
+    transition: 
+        transform 3s ease-in-out,
+        background-color 3s ease-in-out,
+        border-radius 3s ease-in-out,
+        width 3s ease-in-out,
+        height 3s ease-in-out;
+}
+.box:hover {
+    transform: translateX(300px) rotate(360deg);
+    background-color: yellow;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
